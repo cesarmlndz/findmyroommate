@@ -10,6 +10,9 @@ import { signOut } from "firebase/auth"
 import Modal from '../components/Modal'
 import Footer from '../components/Footer'
 
+
+/*hello*/
+
 export default function HomePage() {
   const [listings, setListings] = useState([])
   const [search, setSearch] = useState('')
