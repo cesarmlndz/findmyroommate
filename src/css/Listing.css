@@ -1,0 +1,46 @@
+.listing {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    gap: 0.3rem;
+    background: rgba(233, 233, 233, 0.671);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: relative;
+}
+
+.location {
+    font-size: 2.1rem;
+}
+
+.description {
+    font-size: 1.2rem;
+}
+
+.cost {
+    color: rgba(73, 73, 246, 0.744);
+    font-size: 2rem;
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+.contact {
+    font-size: 1.2rem;
+}
+
+.trash {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .listing {
+        width: 60%;
+    }
+ }

@@ -1,0 +1,60 @@
+.dev-profile {
+    background: white;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.dev-profile .title {
+    font-size: 1.5rem;
+    font-family: 'Poppins', cursive;
+    margin-bottom: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dev-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cesar {
+    width: 14rem;
+    height: 18rem;
+    border: 2px solid black;
+    margin-top: 2rem;
+}
+
+.media-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.IG {
+    height: 2rem;
+}
+
+.linkedIn {
+    height: 2.7rem;
+}
+
+@media (min-width: 1024px) {
+    .content {
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .content p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .cesar {
+        height: 20rem;
+        width: 15rem;
+    }
+ }

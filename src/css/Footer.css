@@ -1,0 +1,19 @@
+.footer {
+    background: black;
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer h2 {
+    color: white;
+    font-family: 'Poppins', cursive;
+    font-size: 1.3rem;
+}
+
+.meet-dev {
+    color: white;
+    text-decoration: none;
+}

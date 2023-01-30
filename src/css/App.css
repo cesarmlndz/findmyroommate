@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Darker+Grotesque:wght@300&family=Inter:wght@400;700&family=Maven+Pro:wght@400;600&family=Pacifico&family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Darker Grotesque', cursive;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+}
