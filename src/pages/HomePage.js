@@ -6,12 +6,9 @@ import Listing from '../components/Listing'
 import { Link } from 'react-router-dom'
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from '../config/firebase.js'
-import { signOut } from "firebase/auth"
+// import { signOut } from "firebase/auth"
 import Modal from '../components/Modal'
 import Footer from '../components/Footer'
-
-
-/*hello*/
 
 export default function HomePage() {
   const [listings, setListings] = useState([])
@@ -29,20 +26,23 @@ export default function HomePage() {
     setListings(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
   }
 
- /*  const signUserOut = async () => {
+ /*  
+  const signUserOut = async () => {
     await signOut(auth)
-  } */
+  } 
+ */
 
   const deletePost = async (id) => {
     const postDoc = doc(db, 'listing', id)
     await deleteDoc(postDoc)
 
     setTriggerModal((prevState) => !prevState)
+
     setListings(searchFilterd.filter((listing) => listing.id !== postDoc.id))
   }
 
   const popUp = (id) => {
-    setDeletedId(id)
+    setDeletedId(id) 
     setTriggerModal((prevState) => !prevState)
   }
 

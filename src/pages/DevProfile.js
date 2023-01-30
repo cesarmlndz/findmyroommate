@@ -12,8 +12,7 @@ export default function DevProfile() {
             <p>Hello! My name is Cesar Melendez and I am the developer of this application. I am currently pursuing a
             Bachelor of Science (B.S) in Computer Engineering at the College of Engineering and Computing at 
             Florida International University. I hope to graudate with this degree in the Fall of 2023. I was born in San Juan, 
-            Puerto Rico and moved to South Florida
-            at the age of six.
+            Puerto Rico and later moved to South Florida.
             <br></br><br></br>
             Software Engineering as a whole is my passion and I do not see myself doing anything else. More recently I have been diving
             deeper into the realm of web-development. I feel web-devlopment is a great tool to start creating projects of your own, which

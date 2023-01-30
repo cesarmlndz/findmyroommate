@@ -10,7 +10,7 @@ export default function Modal(props) {
             <div className='choices'>
                 <button className='no-btn' onClick={popUp}>NO</button>
                 <button className='yes-btn' onClick={() => deletePost(deletedId)}>YES</button>
-            </div>
+            </div> 
         </div>
     </div>
   )
