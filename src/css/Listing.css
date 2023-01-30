@@ -11,24 +11,29 @@
 }
 
 .location {
-    font-size: 2.1rem;
+    font-size: 2rem;
+    font-family: 'Poppins', cursive;
 }
 
 .description {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-family: 'Poppins', cursive;
 }
 
 .cost {
     color: rgba(73, 73, 246, 0.744);
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-family: 'Poppins', cursive;
 }
 
 .name {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins', cursive;
 }
 
 .contact {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins', cursive;
 }
 
 .trash {
