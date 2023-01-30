@@ -14,7 +14,7 @@ export default function Listing(props) {
   return (
     <>
       <div className='listing'>
-          <h2 className='location'>{listing.location}</h2>
+          <h2 className='location'>{listing.location} &#x2022; FIU</h2>
           <h3 className='description'>{listing.description}</h3>
           <h2 className='cost'>${listing.housingOption === 'Off-Campus' ? listing.cost.toLocaleString() + ' / month' : listing.cost.toLocaleString() + ' / semester'}</h2>
           <h3 className='name'>Posted By: {listing.name} on {listing.date}</h3>
