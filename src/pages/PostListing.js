@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom'
 import {addDoc, collection} from "firebase/firestore"
 import { db , auth} from '../config/firebase.js'
 import { useAuthState } from "react-firebase-hooks/auth"
-import dormPic from '../icons/dorm-pic2.jpg'
 
 export default function PostListing() {
   const [location, setLocation] = useState('')
