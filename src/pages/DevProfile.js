@@ -7,7 +7,6 @@ import linkedIn from '../icons/linkedinlogo.png'
 export default function DevProfile() {
   return (
     <div className='dev-profile'>
-        <h1 className='title'>MEET THE DEVELOPER</h1>
         <div className='content'>
             <p>Hello! My name is Cesar Melendez and I am the developer of this application. I am currently pursuing a
             Bachelor of Science (B.S) in Computer Engineering at the College of Engineering and Computing at 
