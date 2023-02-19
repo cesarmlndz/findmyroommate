@@ -18,7 +18,6 @@ export default function App() {
         <Route path='/login' element={<Login />}></Route>
         <Route path='/about' element={<DevProfile />}></Route>
       </Routes>
-      <Footer />
     </Router>
     </div>
   );

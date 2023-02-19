@@ -73,6 +73,7 @@ export default function HomePage() {
           {searchFilterd.length !== 0 ? searchFilterd.map((listing) => <Listing listing={listing} popUp={popUp} key={listing.id}/>) : <h1 className='no-listings'>No listings found...</h1>}
       </div>
       {/* <button onClick={signUserOut}>Sign out</button> */}
+      <Footer />
     </div>
     
   )

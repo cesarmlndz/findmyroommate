@@ -48,6 +48,7 @@
     background: rgba(173, 216, 230, 0.383);
     border: 1.5px solid black;
     font-size: 0.8rem;
+    color: black;
 }
 
 .homepage select {
@@ -59,6 +60,7 @@
     font-size: 1.1rem;
     border: 1.5px solid black;
     padding: 0.1rem 0;
+    color: black;
 }
 
 .no-listings {
