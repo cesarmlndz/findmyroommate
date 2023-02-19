@@ -10,6 +10,7 @@
 .post-listing h1 {
     font-size: 1.5rem;
     font-family: 'Poppins', cursive;
+    font-weight: 100;
 }
 
 .inputs {

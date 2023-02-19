@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import PostListing from './pages/PostListing'
 import Login from './pages/Login'
 import DevProfile from './pages/DevProfile';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path='/login' element={<Login />}></Route>
         <Route path='/about' element={<DevProfile />}></Route>
       </Routes>
+      <Footer />
     </Router>
     </div>
   );
