@@ -47,7 +47,7 @@ textarea {
 button {
     font-family: 'Poppins', cursive;
     padding: 0.3rem 0rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background: rgba(176, 235, 255, 0.192);
     border: 1px solid black;
     color: black;
@@ -80,5 +80,9 @@ button:hover {
         height: 7%;
         border: 1.5px solid black;
         cursor: pointer;
+    }
+
+    button {
+        font-size: 1rem;
     }
 }
