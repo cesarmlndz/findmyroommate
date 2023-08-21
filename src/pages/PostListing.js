@@ -41,7 +41,6 @@ export default function PostListing() {
 
   return (
     <div className='post-listing'>
-        <h1>ADDING A POST</h1>
         <div className='inputs'>
             <select className='form-select' onChange={(e) => {setHousingOption(e.target.value)}}>
               <option value='Off-Campus'>Off-Campus</option>

@@ -4,13 +4,11 @@
     flex-direction: column;
     gap: 1.5rem;
     height: 100vh;
-    background: white;
 }
 
 .post-listing h1 {
     font-size: 1.5rem;
     font-family: 'Poppins', cursive;
-    font-weight: 100;
 }
 
 .inputs {
@@ -43,6 +41,7 @@ textarea {
     border: 1px solid black;
     padding-left: 0.5rem;
     border-radius: 5px;
+    color: black;
 }
 
 button {
@@ -51,6 +50,7 @@ button {
     font-size: 1rem;
     background: rgba(176, 235, 255, 0.192);
     border: 1px solid black;
+    color: black;
 }
 
 button:hover {
@@ -63,19 +63,22 @@ button:hover {
         height: 7%;
         border: 1.5px solid black;
     }
+
     textarea {
         width: 100%;
         border: 1.5px solid black;
     }
+
     .form-select {
         width: 100%;
         height: 7%;
         border: 1.5px solid black;
     }
+
     .post-btn {
         width: 100%;
         height: 7%;
         border: 1.5px solid black;
         cursor: pointer;
     }
- }
+}

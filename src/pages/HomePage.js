@@ -3,12 +3,13 @@ import '../css/HomePage.css'
 import { getDocs, collection, doc, deleteDoc } from "firebase/firestore"
 import { db } from "../config/firebase.js"
 import Listing from '../components/Listing'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useAuthState } from "react-firebase-hooks/auth"
-import { auth } from '../config/firebase.js'
-// import { signOut } from "firebase/auth"
+import { signOut } from "firebase/auth"
 import Modal from '../components/Modal'
 import Footer from '../components/Footer'
+import { auth, provider } from "../config/firebase"
+import { signInWithPopup} from "firebase/auth"
 
 export default function HomePage() {
   const [listings, setListings] = useState([])
@@ -21,17 +22,17 @@ export default function HomePage() {
 
   const listingsRef = collection(db, "listing")
 
+  const navigate = useNavigate()
+
   const getListings = async () => {
     const data = await getDocs(listingsRef)
     setListings(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
   }
 
- /*  
   const signUserOut = async () => {
     await signOut(auth)
   } 
- */
-
+ 
   const deletePost = async (id) => {
     const postDoc = doc(db, 'listing', id)
     await deleteDoc(postDoc)
@@ -45,6 +46,17 @@ export default function HomePage() {
     setDeletedId(id) 
     setTriggerModal((prevState) => !prevState)
   }
+
+  const signInWithGoogle =  async () => {
+    if (!user) {
+        const result = await signInWithPopup(auth, provider);
+        console.log(result);
+
+        navigate("/postListing");
+    } else {
+        navigate("/postListing");
+    }
+}
 
   useEffect(() => {
     getListings()
@@ -63,7 +75,7 @@ export default function HomePage() {
             setSearch(e.target.value)
           }}></input>
       </div>
-     <Link to={user ? '/postListing' : '/login'}><button className='add-post'>Add Post +</button></Link>
+     <button className='add-post' onClick={signInWithGoogle}>Add Post +</button>
      <select onChange={(e) => setHousingOption(e.target.value)}>
           <option value='All'>All</option>
           <option value='Off-Campus'>Off-Campus</option>
